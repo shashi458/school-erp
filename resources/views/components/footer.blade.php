@@ -1,21 +1,22 @@
 
-<footer class="site-footer" id="contact">
-    <div class="footer-main">
+<footer class="footer">
+    <div class="container footer-content">
         <div>
-            <h3>{{ $school['name'] }}</h3>
-            <p>{{ $school['tagline'] }}</p>
+            <h3>Bright Future School</h3>
+            <p>Building knowledge, character and confidence.</p>
         </div>
 
-        <div class="footer-links">
-            <a href="#about">About</a>
-            <a href="#academics">Academics</a>
-            <a href="#admissions">Admissions</a>
-            <a href="#notices">Notices</a>
+        <div>
+            <h4>Quick Links</h4>
+            <p>
+                <a href="{{ route('about') }}">About Us</a> |
+                <a href="{{ route('admission') }}">Admissions</a> |
+                <a href="{{ route('contact') }}">Contact</a>
+            </p>
         </div>
     </div>
 
-    <div class="footer-bottom">
-        © {{ date('Y') }} {{ $school['name'] }}.
-        All rights reserved.
+    <div class="copyright">
+        © {{ date('Y') }} Bright Future School. Demo website.
     </div>
 </footer>

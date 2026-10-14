@@ -5,13 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>@yield('title', 'School ERP')</title>
+    <title>@yield('title', 'Bright Future School')</title>
 
-    <link rel="stylesheet" href="{{ asset('home.css') }}">
+    
+
+<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+
 </head>
 <body>
 
-    @yield('content')
+    @include('components.header')
+    @include('components.navbar')
+
+    <main>
+        @yield('content')
+    </main>
+
+    @include('components.footer')
 
 </body>
 </html>
